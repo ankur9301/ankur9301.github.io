@@ -1103,7 +1103,7 @@ section a:hover {
 
 /* BREAKPOINTS */
 
-@media (max-width: 1400px) {
+@media (max-width: 1550px) {
     html {
         font-size: 55%
     }
@@ -1125,7 +1125,7 @@ section a:hover {
 
     .about-img {
         position: absolute;
-        top: 60%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -150%);
         /* Perfectly center the element */
