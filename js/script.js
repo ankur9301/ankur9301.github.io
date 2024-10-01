@@ -105,6 +105,28 @@ window.addEventListener('click', (e) => {
 });
 
 
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const highlightBox = button.closest('.highlight-box');
+        const description = highlightBox.querySelector('.highlight-description');
+
+        if (highlightBox.classList.contains('expanded')) {
+            // Collapse the content
+            description.textContent = description.getAttribute('data-full-text').substring(0, 100) + '...';
+            button.textContent = 'Read More';
+        } else {
+            // Expand the content
+            description.textContent = description.getAttribute('data-full-text');
+            button.textContent = 'Read Less';
+        }
+
+        // Toggle the expanded class
+        highlightBox.classList.toggle('expanded');
+    });
+});
+
+
 // // Array of images
 // const images = [
 //     "images/hackathon.png",
