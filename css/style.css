@@ -664,6 +664,15 @@ section a:hover {
     justify-content: center;
 }
 
+/* .highlight-box {
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 350px;
+    transition: transform 0.3s;
+    cursor: pointer;
+} */
+
 .highlight-box {
     background: var(--second-bg-color);
     border-radius: 1rem;
@@ -671,7 +680,30 @@ section a:hover {
     max-width: 350px;
     transition: transform 0.3s;
     cursor: pointer;
+    position: relative;
 }
+
+.highlight-box:hover .blog-preview {
+    display: block;
+}
+
+.blog-preview {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 105%;
+    /* Positioning to the left of the highlight-box */
+    width: 200px;
+    /* Adjust width as needed */
+    padding: 1rem;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    font-size: 1.4rem;
+}
+
 
 .highlight-box:hover {
     transform: translateY(-5px);
