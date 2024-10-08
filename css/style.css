@@ -29,9 +29,9 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    background: url('/images/tech12.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: var(--text-color);
-
 }
 
 .header {
@@ -87,6 +87,8 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+    background: url('/images/tech2.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 
@@ -106,7 +108,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/ag.png') no-repeat;
+    /* background: url('/images/ag.png') no-repeat; */
     background-size: cover;
     background-position: center;
 
@@ -638,9 +640,9 @@ section a:hover {
 
 .highlights {
     padding: 6rem 9%;
-    background: var(--bg-color);
+    background: url('/images/tech6.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: var(--text-color);
-    text-align: center;
 }
 
 .heading {
@@ -1362,6 +1364,8 @@ section a:hover {
     font-size: 1.4rem;
     text-decoration: underline;
 }
+
+
 
 
 /* KEYFRAMES ANIMATION */

@@ -127,6 +127,7 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
 });
 
 
+
 // // Array of images
 // const images = [
 //     "images/hackathon.png",
