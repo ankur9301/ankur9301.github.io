@@ -29,9 +29,8 @@ html {
 }
 
 body {
-    background: url('/images/tech12.jpg') no-repeat center center;
+    background: url('/images/tech12.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
     color: var(--text-color);
 }
 
@@ -88,9 +87,8 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-    background: url('/images/tech2.jpg') no-repeat center center;
+    background: url('/images/tech2.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 
@@ -642,9 +640,8 @@ section a:hover {
 
 .highlights {
     padding: 6rem 9%;
-    background: url('/images/tech6.jpg') no-repeat center center;
+    background: url('/images/tech6.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
     color: var(--text-color);
 }
 
@@ -1210,10 +1207,9 @@ section a:hover {
 
 @media (max-width: 768px) {
 
-
-    .header {
-        background: var(--bg-color);
-
+    body {
+        background: url('/images/tech12low.jpg') no-repeat center center fixed;
+        background-size: cover;
     }
 
 
@@ -1278,6 +1274,8 @@ section a:hover {
 
 
 @media (max-width: 520px) {
+
+
     html {
         font-size: 50%;
     }
