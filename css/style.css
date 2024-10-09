@@ -34,6 +34,9 @@ body {
     color: var(--text-color);
 }
 
+
+
+
 .header {
     position: fixed;
     top: 0;
@@ -637,7 +640,6 @@ section a:hover {
 /* higlight section */
 
 
-
 .highlights {
     padding: 6rem 9%;
     background: url('/images/tech6.jpg') no-repeat center center fixed;
@@ -1208,9 +1210,24 @@ section a:hover {
 @media (max-width: 768px) {
 
     body {
-        background: url('/images/tech12low.jpg') no-repeat center center fixed;
-        background-size: cover;
+        background: var(--bg-color);
+        color: var(--text-color);
+
     }
+
+    .highlights {
+        padding: 6rem 9%;
+        background: var(--bg-color);
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 10rem 9% 2rem;
+    }
+
+
 
 
     #menu-icon {
